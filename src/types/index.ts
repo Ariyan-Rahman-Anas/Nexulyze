@@ -1,3 +1,11 @@
+import { ReactNode } from "react"
+
+export interface DashboardSidebarItemsI{
+    title: string
+    route: string
+    icon?: ReactNode
+}
+
 export interface FormFieldProps {
     label: string,
     required: boolean,
