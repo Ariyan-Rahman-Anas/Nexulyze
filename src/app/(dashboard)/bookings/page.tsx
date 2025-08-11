@@ -1,6 +1,6 @@
 "use client";
 
-import { CreateActivityPanel } from "@/components/panels/CreateActivityPanel";
+import { ActivityCreatePanel } from "@/components/panels/ActivityCreatePanel";
 import { Button } from "@/components/ui/button";
 import { Bell, ChevronsUpDown, UserCircleIcon } from "lucide-react";
 import { useState } from "react";
@@ -36,7 +36,7 @@ export default function BookingsPage() {
       >Create Activity</Button>
      </div>
 
-      <CreateActivityPanel open={panelOpen} onOpenChange={setPanelOpen} />
+      <ActivityCreatePanel open={panelOpen} onOpenChange={setPanelOpen} />
     </div>
   );
 }
