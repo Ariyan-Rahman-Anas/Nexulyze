@@ -162,7 +162,7 @@ const ActivityCreateForm = ({ onOpenChange }: { onOpenChange: (open: boolean) =>
         </div>
 
         {/* Action btns */}
-        <div className="flex justify-between items-center gap-2">
+        <div className="flex justify-between items-center gap-2 pt-8">
           <Button
             variant="outline"
             onClick={() => onOpenChange(false)}
@@ -175,7 +175,7 @@ const ActivityCreateForm = ({ onOpenChange }: { onOpenChange: (open: boolean) =>
             type="submit"
             className="bg-primaryBgLight hover:bg-primaryBgLight/80 text-black rounded-full px-6"
           >
-            Create Activity
+            Book Court
           </Button>
         </div>
       </form>
