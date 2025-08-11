@@ -19,6 +19,7 @@ export interface SelectFieldProps {
     value: string,
     onValueChange: (value: string) => void,
     options: { value: string, label: string }[]
+    className?: string
 }
 
 export interface SwitchFieldProps {
