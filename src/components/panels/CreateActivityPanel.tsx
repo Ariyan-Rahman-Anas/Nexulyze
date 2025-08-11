@@ -1,7 +1,7 @@
 "use client";
 
 import { Drawer, DrawerContent, DrawerHeader } from "@/components/ui/drawer";
-import { CreateActivityForm } from "../forms/CreateActivityForm";
+import ActivityCreateForm from "../forms/ActivityCreateForm";
 
 interface CreateActivityPanelProps {
   open: boolean;
@@ -18,7 +18,7 @@ export function CreateActivityPanel({
           <div className="p-6 pt-0 overflow-y-auto h-full">
             <DrawerHeader className="px-0">
             </DrawerHeader>
-            <CreateActivityForm onOpenChange={onOpenChange} />
+            <ActivityCreateForm onOpenChange={onOpenChange} />
           </div>
         </DrawerContent>
     </Drawer>

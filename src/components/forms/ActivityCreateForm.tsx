@@ -6,7 +6,8 @@ import { SelectField, InputField, SwitchField, AddPlayersField, NumberInputField
 import { X } from "lucide-react";
 import { activityOptions, courtOptions, timeOptions, userOptions } from "@/constant/Constants";
 
-export function CreateActivityForm({ onOpenChange }: { onOpenChange: (open: boolean) => void }) {
+const ActivityCreateForm = ({ onOpenChange }: { onOpenChange: (open: boolean) => void }) => {
+
   const [formData, setFormData] = useState({
     createdBy: "",
     startTime: "",
@@ -29,7 +30,6 @@ export function CreateActivityForm({ onOpenChange }: { onOpenChange: (open: bool
     e.preventDefault()
     onOpenChange(false);
   }
-
 
   return (
     <div className="space-y-6">
@@ -180,5 +180,6 @@ export function CreateActivityForm({ onOpenChange }: { onOpenChange: (open: bool
         </div>
       </form>
     </div>
-  );
+  )
 }
+export default ActivityCreateForm
