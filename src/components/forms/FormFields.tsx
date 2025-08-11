@@ -8,7 +8,6 @@ import { ChevronDown } from "lucide-react";
 import { FormFieldProps, InputFieldProps, NumberInputFieldProps, PriceInputFieldProps, SelectFieldProps, SwitchFieldProps } from "@/types";
 
 
-
 export function FormField({ label, required = false, children }: FormFieldProps) {
   return (
     <div className="space-y-2">
@@ -17,6 +16,7 @@ export function FormField({ label, required = false, children }: FormFieldProps)
     </div>
   );
 }
+
 
 export function SelectField({ 
   label, 
@@ -44,6 +44,7 @@ export function SelectField({
   );
 }
 
+
 export function InputField({
   label,
   required = false,
@@ -64,8 +65,6 @@ export function InputField({
     </FormField>
   );
 }
-
-
 
 
 export function SwitchField({
@@ -103,6 +102,7 @@ export function AddPlayersField({ label, onAdd }: { label: string; onAdd: () => 
     </div>
   );
 }
+
 
 export function NumberInputField({
   label,
@@ -146,6 +146,7 @@ export function NumberInputField({
     </FormField>
   );
 }
+
 
 export function PriceInputField({
   label,
