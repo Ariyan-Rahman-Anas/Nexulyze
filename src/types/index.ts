@@ -6,6 +6,13 @@ export interface DashboardSidebarItemsI{
     icon?: ReactNode
 }
 
+
+export interface ActivityCreatePanelProps {
+    open: boolean;
+    onOpenChange: (open: boolean) => void;
+}
+
+
 export interface FormFieldProps {
     label: string,
     required: boolean,

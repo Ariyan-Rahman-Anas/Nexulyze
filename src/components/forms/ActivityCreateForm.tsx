@@ -39,7 +39,7 @@ const ActivityCreateForm = ({ onOpenChange }: { onOpenChange: (open: boolean) =>
           <span className="ml-2 text-sm text-primaryBg">Wed Jul 30, 2025</span>
         </h2>
         <div className="rounded-md flex items-center justify-center h-7 w-7 border bg-gray-200 hover:bg-gray-300 duration-200 cursor-pointer">
-          <X size={20} className="text-primaryBg" onClick={() => onOpenChange(false)} />
+          <X size={20} className="text-primaryBg" strokeWidth={2.5} onClick={() => onOpenChange(false)} />
         </div>
       </div>
 
