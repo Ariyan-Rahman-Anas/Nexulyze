@@ -1,12 +1,6 @@
-"use client";
-
 import { Drawer, DrawerContent, DrawerHeader } from "@/components/ui/drawer";
 import ActivityCreateForm from "../forms/ActivityCreateForm";
-
-interface ActivityCreatePanelProps {
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
-}
+import { ActivityCreatePanelProps } from "@/types";
 
 export function ActivityCreatePanel({
   open,
